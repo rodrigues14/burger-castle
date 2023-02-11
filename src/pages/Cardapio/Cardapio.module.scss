@@ -1,0 +1,22 @@
+@import "styles/variaveis";
+
+.menu {
+  padding: 20px $padding-horizontal;
+}
+
+.header {
+  background-image: url('/assets/Cardapio/capa.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  height: 300px;
+  padding: 0 $padding-horizontal;
+  &__text {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+    min-width: 400px;
+    width: 40%;
+  }
+}
