@@ -39,7 +39,7 @@
     }
   },
   {
-    "title": "X-burger acompanhado com batata frita",
+    "title": "X-burger + batata frita",
     "description": "Sanduíche com hambúrguer, queijo e salada, acompanhado com uma porção de batata de 250g.",
     "photo": "/assets/pratos/combo-a.png",
     "size": 550,
@@ -52,7 +52,7 @@
     }
   },
   {
-    "title": "Burger Alfa acompanhado com batata",
+    "title": "Burger Alfa + batata",
     "description": "Sanduíche com hambúrguer, queijo, picles, bacon e salada, acompanhado com uma porção de batata de 300g.",
     "photo": "/assets/pratos/combo-b.png",
     "size": 700,
