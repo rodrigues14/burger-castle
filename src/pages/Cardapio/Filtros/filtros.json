@@ -1,18 +1,18 @@
 [
   {
-    "label": "Massas",
+    "label": "Burger",
     "id": 1
   },
   {
-    "label": "Carnes",
+    "label": "Combos",
     "id": 2
   },
   {
-    "label": "Combos",
+    "label": "Batata",
     "id": 3
   },
   {
-    "label": "Veganos",
+    "label": "Bebidas",
     "id": 4
   }
 ]
