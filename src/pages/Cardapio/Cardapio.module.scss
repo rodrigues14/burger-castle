@@ -18,6 +18,7 @@
   align-items: center;
   background-image: url("/assets/Cardapio/capa.png");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   height: 300px;
@@ -36,6 +37,10 @@
     font-size: 5rem;
     min-width: 400px;
     width: 40%;
+    @media (max-width: $desktop_xsm) {
+      font-size: 50px;
+      min-width: 100%;
+    }
   }
 }
 
