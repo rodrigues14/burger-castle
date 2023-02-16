@@ -1,0 +1,60 @@
+@import 'styles/variaveis';
+@import 'styles/breakpoints';
+
+$combos: #d73b3b;
+$burger: #30201e;
+$batata: #e6c864;
+$bebida: #80aa40;
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  max-width: 700px;
+  @media (max-width: $desktop_xsm) {
+    justify-content: flex-end;
+  }
+  @media (max-width: $mobile) {
+    justify-content: flex-start;
+  }
+div {
+    margin: 10px;
+  }
+  &__tipo {
+    align-items: center;
+    border-radius: 2px;
+    display: flex;
+    font-weight: bold;
+    height: 40px;
+    justify-content: center;
+    padding: 10px 30px;
+    &__combos {
+      background-color: $combos;
+      color: white;
+    }
+    &__burger {
+      background-color: $burger;
+      color: white;
+    }
+    &__batata {
+      background-color: $batata;
+    }
+    &__bebida {
+      background-color: $bebida;
+    }
+  }
+  &__porcao,
+  &__qtdpessoas,
+  &__valor {
+    align-items: center;
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: bold;
+    justify-content: center;
+  }
+  &__valor {
+    color: $red;
+    font-size: 1.7rem;
+  }
+}
