@@ -3,21 +3,20 @@
 .recomendados {
   border-radius: 2px;
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
 }
 .recomendado {
   &__imagem {
-    width: 300px;
+    max-width: 300px;
     margin-bottom: 10px;
     img {
       border-radius: 8px;
-      width: 100%;
+      max-width: 100%;
     }
   }
   &__botao {
-    background-color: $laranja;
+    background-color: $orange;
     border: none;
     border-radius: 5px;
     color: white;
@@ -28,7 +27,7 @@
     transition: .2s ease;
     width: 100%;
     &:hover {
-      background-color: $red-dark;
+      background-color: $orange-dark;
     }
   }
 }

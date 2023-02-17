@@ -3,6 +3,7 @@
 
 .menu {
   display: flex;
+  flex-wrap: wrap;
   padding: 20px $padding-horizontal;
   @media (max-width: $desktop_xsm) {
     padding: 20px $padding-horizontal-mobile;
@@ -13,9 +14,17 @@
   @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
     padding: 20px $padding-horizontal-md;
   }
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
   &__list {
     align-items: center;
     display: flex;
+    @media (max-width: 550px) {
+      padding: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   &__link {
     list-style-type: none;

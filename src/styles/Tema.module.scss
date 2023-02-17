@@ -16,4 +16,7 @@
   color: $dark;
   font-size: 3rem;
   margin-bottom: 30px;
+  @media (max-width: 400px) {
+    font-size: 2rem;
+  }
 }

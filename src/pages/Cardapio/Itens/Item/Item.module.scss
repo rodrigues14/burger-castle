@@ -1,15 +1,21 @@
 @import "styles/variaveis";
 @import "styles/breakpoints";
 
-$combos: #d73b3b;
-$burger: #30201e;
-$batata: #e6c864;
-$bebida: #80aa40;
-
 .item {
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
   display: flex;
   flex-wrap: wrap;
+  padding: 20px;
+  transition: .2s ease-in;
   width: 90%;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+  &:hover {
+    background-color: $grey;
+  }
   &__imagem {
     min-width: 240px;
     @media (max-width: $desktop_xsm) {
@@ -26,7 +32,7 @@ $bebida: #80aa40;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 20px;
+    margin: 0 20px;
     @media (max-width: $desktop_xsm) {
       flex-direction: row;
       margin-top: 20px;
