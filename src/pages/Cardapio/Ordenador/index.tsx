@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { memo, useState } from 'react';
 import styles from './Ordenador.module.scss';
 import opcoes from './opcoes.json';
 import classNames from 'classnames';
@@ -9,7 +9,7 @@ interface Props {
   setOrdenador: React.Dispatch<React.SetStateAction<string>>
 }
 
-export default function Ordenador({ ordenador, setOrdenador }: Props) {
+function Ordenador({ ordenador, setOrdenador }: Props) {
   const [aberto, setAberto] = useState(false);
   const nomeOrdenador = ordenador 
     && opcoes.find(opcao => opcao.value === ordenador)?.nome;
@@ -46,3 +46,5 @@ export default function Ordenador({ ordenador, setOrdenador }: Props) {
     </button>
   );
 }
+
+export default memo(Ordenador);
