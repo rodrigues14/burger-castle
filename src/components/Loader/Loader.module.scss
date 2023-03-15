@@ -1,0 +1,22 @@
+.containerLoader {
+  min-height: calc(100vh - 104px - 84px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border-top: 8px solid rgba(255, 168, 38, 1);
+  border-left: 8px solid rgba(255, 168, 38, 1);
+  border-right: 8px solid rgba(255, 255, 255, 0);
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin{
+  to {
+    transform: rotate(360deg);
+  }
+}

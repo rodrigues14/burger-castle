@@ -1,4 +1,5 @@
 import Footer from 'components/Footer';
+import Loader from 'components/Loader';
 import Menu from 'components/Menu';
 import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -15,7 +16,7 @@ export default function AppRouter() {
     <main className='container'>
       <Router>
         <Menu />
-        <Suspense fallback={<p>Carregando...</p>}>
+        <Suspense fallback={<Loader />}>
           <Routes>
             <Route path='/' element={<PaginaPadrao />}>
               <Route index element={<Inicio />} />
