@@ -3,8 +3,16 @@
 .footer {
   background-color: $orange;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px $padding-horizontal;
+  p {
+   font-size: 18px; 
+   font-weight: 600;
+   a {
+    color: black;
+   }
+  }
   @media (max-width: $desktop_xsm) {
   padding: 10px $padding-horizontal-mobile;
   }
