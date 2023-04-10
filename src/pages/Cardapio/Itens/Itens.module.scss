@@ -4,4 +4,8 @@
   flex-wrap: wrap;
   gap: 40px;
   width: 100%;
+  &__naoEncontrado {
+    min-height: calc(100vh - 404px - 385.19px - 84px);
+    font-size: 24px;
+  }
 }

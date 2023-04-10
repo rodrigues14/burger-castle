@@ -41,15 +41,14 @@ export default function Itens(props: Props) {
     const novaLista = cardapio.filter(item => testaBusca(item.title) && testaFiltro(item.category.id));
     setLista(ordenar(novaLista));
   }, [busca, filtro, ordenador]);
-
   return (
     <div className={styles.itens}>
-      {lista.map((item) => (
+      {lista.length !== 0 ? lista.map((item) => (
         <Item 
           key={item.id}
           {...item}
         />
-      ))}
+      )) : <div className={styles.itens__naoEncontrado}><p>Nenhum item encontrado!</p></div>}
     </div>
   );
 }
