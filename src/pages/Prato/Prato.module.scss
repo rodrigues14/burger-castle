@@ -10,6 +10,7 @@
   font-weight: bold;
 }
 .container {
+  min-height: calc(100vh - 404px - 84px - 29.59px - 100px);
   align-items: center;
   display: flex;
   flex-direction: column;
