@@ -1,10 +1,6 @@
 import styles from './Sobre.module.scss';
 import stylesTema from 'styles/Tema.module.scss';
 import casa from 'assets/sobre/casa.png';
-import burger1 from 'assets/sobre/burger1.png';
-import burger2 from 'assets/sobre/burger2.png';
-
-const imagens = [burger1, burger2];
 
 export default function Sobre() {
   return (
@@ -23,13 +19,6 @@ export default function Sobre() {
             Para acompanhar o seu lanche, O burger Castle possui porções de batata e bebidas, que harmonizam perfeitamente com o seu prato!
           </p>
         </div>
-      </div>
-      <div className={styles.imagens}>
-        {imagens.map((imagem, index) => (
-          <div key={index} className={styles.imagens__imagem}>
-            <img src={imagem} alt="Imagem dos burgers" />
-          </div>
-        ))}
       </div>
     </section>
   );
