@@ -13,10 +13,10 @@ const Sobre = lazy(() => import('pages/Sobre'));
 
 export default function AppRouter() {
   return (
-    <main className='container'>
-      <Router>
-        <Menu />
-        <Suspense fallback={<Loader />}>
+    <Router>
+      <Menu />
+      <Suspense fallback={<Loader />}>
+        <main className='container'>
           <Routes>
             <Route path='/' element={<PaginaPadrao />}>
               <Route index element={<Inicio />} />
@@ -26,9 +26,9 @@ export default function AppRouter() {
             <Route path='prato/:id' element={<Prato />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
-        </Suspense>
-        <Footer />
-      </Router>
-    </main>
+        </main>
+      </Suspense>
+      <Footer />
+    </Router>
   );
 }

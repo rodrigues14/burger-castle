@@ -2,10 +2,18 @@
 @import "styles/breakpoints";
 .footer {
   background-color: $orange;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 10px $padding-horizontal;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin-inline: auto;
+    @media (max-width: 500px) {
+      flex-direction: column-reverse;
+      padding-top: 15px;
+    }
+  }
   p {
    font-size: 18px; 
    font-weight: 600;

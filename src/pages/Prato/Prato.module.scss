@@ -2,27 +2,35 @@
 @import 'styles/breakpoints';
 
 .voltar {
-  background-color: transparent;
-  border: none;
-  color: $red;
-  cursor: pointer;
-  font-size: 1.5rem;
-  font-weight: bold;
+  max-width: 1600px;
+  margin-inline: auto;
+  button {
+    background-color: transparent;
+    border: none;
+    color: $red;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
 .container {
-  min-height: calc(100vh - 404px - 84px - 29.59px - 100px);
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 1600px;
+  margin-inline: auto;
 }
 .titulo {
   font-size: 3rem;
 }
 .imagem {
-  max-width: 600px;
+  width: 500px;
   img {
     border-radius: 8px;
+    width: 100%;
+  }
+  @media (max-width: 600px) {
     width: 100%;
   }
 }

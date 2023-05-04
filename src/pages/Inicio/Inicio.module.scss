@@ -37,7 +37,8 @@
 .nossaCasa {
   margin-bottom: 100px;
   position: relative;
-  width: 100%;
+  max-width: 1600px;
+  margin-inline: auto;
   img {
     border-radius: 5px;
     width: 100%;

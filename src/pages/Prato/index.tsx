@@ -17,12 +17,13 @@ export default function Prato() {
 
   return (
     <PaginaPadrao>
-      <button 
-        className={styles.voltar}
-        onClick={() => navigate(-1)}
-      >
-        {'< Voltar'}
-      </button>
+      <div className={styles.voltar}>
+        <button 
+          onClick={() => navigate(-1)}
+        >
+          {'< Voltar'}
+        </button>
+      </div>
       <section className={styles.container}>
         <h1 className={styles.titulo}>
           {prato.title}

@@ -2,6 +2,8 @@
 @import "styles/breakpoints";
 
 .cardapio {
+  max-width: 1600px;
+  margin-inline: auto;
   &__filtros {
     align-items: center;
     display: flex;
