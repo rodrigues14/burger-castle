@@ -6,8 +6,15 @@
   flex: 1;
   flex-direction: column;
   justify-content: center;
+  svg {
+    width: 100%;
+    path {
+      fill: #ffb700;
+    }
+  }
 }
 .voltar {
+  max-width: 1600px;
   display: flex;
   justify-content: flex-start;
   width: 100%;
